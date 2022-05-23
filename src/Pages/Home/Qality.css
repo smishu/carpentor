@@ -1,0 +1,13 @@
+.Qality {
+    background-image: url('../../Assets/carpenter-banner-2.webp');
+
+}
+
+.Qality p {
+    font-size: 30px;
+    color: rgb(226, 137, 42);
+}
+
+.Qality button:hover {
+    background-color: black;
+}
