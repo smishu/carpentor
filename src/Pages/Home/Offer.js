@@ -6,10 +6,10 @@ import carpenter4 from '../../Assets/carpenter-grid-4_470x.webp';
 
 const Offer = () => {
     return (
-        <div className='grid grid-cols-4 gap-4 ml-5 mr-5 mt-6'>
-            <div class="card lg:card-side shadow-xl bg-orange-100">
+        <div className='grid grid-cols-4 gap-5 ml-5 mr-5 mt-6'>
+            <div class="card lg:card-side shadow-xl bg-orange-100 ">
 
-                <div class="card-body">
+                <div class="card-bod">
                     <h2 class="card-title">Hot List!</h2>
                     <p className='text-4xl font-bold text-orange-300'>WOODEN
                         TOOLBOX</p>
@@ -26,7 +26,7 @@ const Offer = () => {
 
 
                 </div>
-                <figure><img className='h-80' src={carpenter2} alt="Album" /></figure>
+                <figure className='h-80'><img src={carpenter2} alt="Album" /></figure>
             </div>
             <div class="card lg:card-side bg-orange-200 shadow-xl">
 
@@ -52,7 +52,7 @@ const Offer = () => {
                 <figure><img className='h-80' src={carpenter4} alt="Album" /></figure>
 
             </div>
-        </div>
+        </div >
     );
 };
 
