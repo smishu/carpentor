@@ -7,20 +7,20 @@ import carpenter4 from '../../Assets/carpenter-grid-4_470x.webp';
 const Offer = () => {
     return (
         <div className='grid grid-cols-4 gap-5 ml-5 mr-5 mt-6'>
-            <div class="card lg:card-side shadow-xl bg-orange-100 ">
+            <div className="card lg:card-side shadow-xl bg-orange-100 ">
 
-                <div class="card-bod">
-                    <h2 class="card-title">Hot List!</h2>
+                <div className="card-bod">
+                    <h2 className="card-title">Hot List!</h2>
                     <p className='text-4xl font-bold text-orange-300'>WOODEN
                         TOOLBOX</p>
 
                 </div>
                 <figure><img className='h-80' src={carpenter1} alt="Album" /></figure>
             </div>
-            <div class="card lg:card-side font-bold bg-red-50 shadow-xl">
+            <div className="card lg:card-side font-bold bg-red-50 shadow-xl">
 
-                <div class="card-body">
-                    <h2 class="card-title">Deal of the day!</h2>
+                <div className="card-body">
+                    <h2 className="card-title">Deal of the day!</h2>
                     <p className='text-4xl font-bold text-orange-900'>CIRCULAR SAW
                         & TOOLS</p>
 
@@ -28,10 +28,10 @@ const Offer = () => {
                 </div>
                 <figure className='h-80'><img src={carpenter2} alt="Album" /></figure>
             </div>
-            <div class="card lg:card-side bg-orange-200 shadow-xl">
+            <div className="card lg:card-side bg-orange-200 shadow-xl">
 
-                <div class="card-body">
-                    <h2 class="card-title">Summer Offer!</h2>
+                <div className="card-body">
+                    <h2 className="card-title">Summer Offer!</h2>
                     <p className='text-4xl font-bold'>CARPENTER
                         TOOLS</p>
 
@@ -40,10 +40,10 @@ const Offer = () => {
                 <figure><img className='h-80' src={carpenter3} alt="Album" /></figure>
 
             </div>
-            <div class="card lg:card-side bg-amber-100 shadow-xl">
+            <div className="card lg:card-side bg-amber-100 shadow-xl">
 
-                <div class="card-body">
-                    <h2 class="card-title">New Arrival!</h2>
+                <div className="card-body">
+                    <h2 className="card-title">New Arrival!</h2>
                     <p className='text-3xl font-bold'>HAND SAW
                         ON WOOD</p>
 
