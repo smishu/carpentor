@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Carpenter = () => {
+const Dashboard = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const Carpenter = () => {
     );
 };
 
-export default Carpenter;
+export default Dashboard;
