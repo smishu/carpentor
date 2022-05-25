@@ -108,7 +108,7 @@ const Login = () => {
                         <input className='btn btn-outline w-full max-w-xs' type="submit" value="Login" />
                     </form>
                     <div className="divider">OR</div>
-                    <p><small>New to Carpenter?<Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                    <p><small>New to Carpenter? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline">Continue with Google</button>
