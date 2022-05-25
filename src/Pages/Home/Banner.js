@@ -1,37 +1,23 @@
 import React from 'react';
-
-import silder1 from '../../Assets/carpenter-banner.webp';
-import silder2 from '../../Assets/slider-2.webp';
+import './Banner.css';
 import silder3 from '../../Assets/slider-3.webp';
 
 const Banner = () => {
     return (
 
-        <div className="carousel w-full">
+        <div class="hero min-h-screen" style={{
+            background: `url(${silder3})`,
 
-            <div id="slide1" className="carousel-item relative w-full">
-                <img src={silder1} alt='' className="w-full" /> /
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" className="btn btn-circle">❮</a>
-                    <a href="#slide2" className="btn btn-circle">❯</a>
+        }}
+        >
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Welcome</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-accent bannerButon text-white">Get Started</button>
                 </div>
             </div>
-            <div id="slide2" className="carousel-item relative w-full">
-                <img src={silder2} alt='' className="w-full" /> /
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" className="btn btn-circle">❮</a>
-                    <a href="#slide3" className="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide3" className="carousel-item relative w-full">
-                <img src={silder3} alt='' className="w-full" /> /
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" className="btn btn-circle">❮</a>
-                    <a href="#slide4" className="btn btn-circle">❯</a>
-                </div>
-            </div>
-
-
         </div>
     );
 };

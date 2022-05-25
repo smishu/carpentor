@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Basics 8-Ounce Hammer, Pink",
+        "price": "30$",
+        "stock": 20,
+        "ratings": 4,
+        "description": " Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.",
+        "img": "https://m.media-amazon.com/images/I/71WlgNKLVjL._AC_SY355_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    },
+    {
+        "name": "Hammer ROTBAND-Plus 500",
+        "price": "105$",
+        "stock": 20,
+        "ratings": 4,
+        "description": "With contoured ash or hickory handle DIN 5111, additionally shaped with a long hardened handle protective steel sleeve.",
+        "img": "https://m.media-amazon.com/images/I/61tIQhyvObL._SL1500_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    },
+    {
+        "name": "CRAFTSMAN Hammer, Fiberglass",
+        "price": "150$",
+        "stock": 20,
+        "ratings": 4,
+        "description": "Durability: overstrike protection where fiberglass handles are most prone to break,Improved grip during use: over mold grip.",
+        "img": "https://m.media-amazon.com/images/I/61aKrv6NzBL._AC_SY355_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    },
+    {
+        "name": " Flooring Installation",
+        "price": "180$",
+        "stock": 20,
+        "ratings": 4,
+        "description": "The double-sided hammer head is made of new high-quality PVC material. Good wear resistance, good elasticity, does not damage the surface when striking, effectively protect the striking surface, durable. Anti - knock, anti - oil, anti - slip, longer service life. The black part handle made of high quality TPR material. Professional design of breathable and non-slip hole on the handle. No slip even when hand sweating.",
+        "img": "https://m.media-amazon.com/images/I/61mDDgrZYgL._AC_SL1500_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    },
+    {
+        "name": "IRWIN Hammer",
+        "price": "100$",
+        "stock": 20,
+        "ratings": 4,
+        "description": "Hybrid handle design is rounded for more comfort and fit with a curved base to prevent slippage and a hardened end cap.",
+        "img": "https://m.media-amazon.com/images/I/41f9-UyWBGL._AC_SY355_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    },
+    {
+        "name": "Handle Claw Hammer ",
+        "price": "300$",
+        "stock": 20,
+        "ratings": 4,
+        "description": "Curved claw head for prying and pulling nails and more; flat hammer head delivers powerful strikes",
+        "img": "https://m.media-amazon.com/images/I/716D1d14HsL._AC_SL1500_.jpg",
+        "shipping": 1,
+        "quantity": 10000
+    }
+]

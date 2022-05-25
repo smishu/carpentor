@@ -7,6 +7,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import Profile from './Pages/Profile/Profile';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
+import Products from './Pages/Home/Products';
+import Blog from './Pages/Blog';
 ;
 
 
@@ -20,6 +22,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/profile' element={<Profile></Profile>}></Route>
