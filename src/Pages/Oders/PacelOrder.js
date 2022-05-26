@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebes.init';
-import { toast } from 'react-toastify';
+
 
 const PacelOrder = ({ pacel, setPacel }) => {
     const { _id, name, quantity, description, img, price } = pacel;
@@ -24,7 +24,7 @@ const PacelOrder = ({ pacel, setPacel }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 setPacel('');
             })
 
@@ -47,7 +47,7 @@ const PacelOrder = ({ pacel, setPacel }) => {
                             <input type="text" disabled value={name} className="input input-bordered w-full max-w-xs" />
                             <input type="text" disabled value={price} className="input input-bordered w-full max-w-xs" />
                             <select className="select select-bordered w-full max-w-xs" required>
-                                <option disabled selected>City?</option>
+                                <option required disabled selected>City?</option>
                                 <option>Dhaka</option>
                                 <option>Chattogram</option>
                                 <option>Khulna</option>
@@ -65,9 +65,16 @@ const PacelOrder = ({ pacel, setPacel }) => {
                                 <option>Naogaon</option>
                             </select>
                             <select className="select select-bordered w-full max-w-xs">
-                                <option disabled selected>Who shot first?</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
+                                <option required disabled selected>quantity</option>
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                                <option>100</option>
+                                <option>1000</option>
+                                <option>50000</option>
+
                             </select>
                             <input type="text" disabled name='name' value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                             <input type="email" disabled name='email' value={user?.email || ''} className="input input-bordered w-full max-w-xs" />

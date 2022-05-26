@@ -21,7 +21,7 @@ const Product = ({ product, setPacel }) => {
                         onClick={() => setPacel(product)(_id)}
                         for="pacel-modal" className="btn btn-primary">Buy Now</label></Link> */}
                     <label
-                        onClick={() => setPacel(product)(_id)}
+                        onClick={() => setPacel(product)}
                         for="pacel-modal" className="btn btn-primary">Buy Now</label>
                 </div>
             </div>

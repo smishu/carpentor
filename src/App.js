@@ -14,6 +14,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import PacelOrder from './Pages/Oders/PacelOrder';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MyItems from './Pages/Dashboard/MyItems';
+import Review from './Pages/Dashboard/Review';
 
 
 
@@ -39,7 +41,10 @@ function App() {
             <Dashboard></Dashboard>
           </RequireAuth>
 
-        }></Route>
+        }>
+          <Route index element={<MyItems></MyItems>}></Route>
+          <Route path='review' element={<Review></Review>}></Route>
+        </Route>
 
         <Route path='/paceloder' element={<PacelOrder></PacelOrder>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
