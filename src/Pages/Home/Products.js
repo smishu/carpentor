@@ -6,7 +6,7 @@ import Product from './Product';
 
 const Products = () => {
     const [pacel, setPacel] = useState(null);
-    const { data: products, isLoading } = useQuery('product', () => fetch(`http://localhost:5000/product`)
+    const { data: products, isLoading, refetch } = useQuery('product', () => fetch(`http://localhost:5000/product`)
         .then(res => res.json())
     )
     if (isLoading)
@@ -32,6 +32,7 @@ const Products = () => {
                 pacel && <PacelOrder
                     pacel={pacel}
                     setPacel={setPacel}
+                    refetch={refetch}
                 ></PacelOrder>
             }
         </div>

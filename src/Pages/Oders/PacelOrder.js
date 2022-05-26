@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebes.init';
 
 
-const PacelOrder = ({ pacel, setPacel }) => {
+const PacelOrder = ({ pacel, setPacel, refetch }) => {
     const { _id, name, quantity, description, img, price } = pacel;
     const [user, error] = useAuthState(auth);
     const handlePacel = event => {
@@ -25,6 +25,7 @@ const PacelOrder = ({ pacel, setPacel }) => {
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
+                refetch();
                 setPacel('');
             })
 

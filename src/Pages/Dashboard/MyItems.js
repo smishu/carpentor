@@ -30,8 +30,8 @@ const MyItems = () => {
                     </thead>
                     <tbody>
                         {
-                            items.map(item => <tr>
-                                <th>1</th>
+                            items.map((item, index) => <tr>
+                                <th>{index + 1}</th>
                                 <td>{item.buyerName}</td>
                                 <td>{item.buyer}</td>
                                 <td>{item.pacel}</td>
