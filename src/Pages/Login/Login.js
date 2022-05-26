@@ -50,12 +50,12 @@ const Login = () => {
                     <h2 className="text-center text-2xl font-bold">Login!</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <div class="form-control w-full max-w-xs">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Email</span>
 
                             </label>
-                            <input type="email" placeholder="Inter Email" class="input input-bordered w-full max-w-xs"
+                            <input type="email" placeholder="Inter Email" className="input input-bordered w-full max-w-xs"
 
                                 {...register("email", {
                                     required: {
@@ -67,9 +67,9 @@ const Login = () => {
                                 })}
 
                             />
-                            <label class="label">
-                                {errors.email?.type === 'required' && <span class="label-text-alt text-red-600">{errors.email.message}</span>}
-                                {errors.pattern?.type === 'required' && <span class="label-text-alt text-red-600">{errors.email.message}</span>}
+                            <label className="label">
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-600">{errors.email.message}</span>}
+                                {errors.pattern?.type === 'required' && <span className="label-text-alt text-red-600">{errors.email.message}</span>}
 
 
                             </label>

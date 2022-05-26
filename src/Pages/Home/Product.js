@@ -1,24 +1,28 @@
 import React from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const Product = ({ product }) => {
+
+const Product = ({ product, setPacel }) => {
     const { name, price, description, img, _id } = product || {};
-    const Navigete = useNavigate();
-    const navigateToProduct = _id => {
-        Navigate(`/product/${_id}`);
-    }
+
     return (
 
 
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={img} alt="Shoes" class="rounded-xl" />
+        <div className="card w-96 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+                <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title">{price}</h2>
+            <div className="card-body items-center text-center">
+                <h2 className="card-title">{price}</h2>
                 <p>{name}</p>
-                <div class="card-actions">
-                    <button onClick={() => navigateToProduct(_id)} class="btn btn-primary">Buy Now</button>
+                <div className="card-actions">
+
+                    {/* <Link to='/paceloder'><label
+                        onClick={() => setPacel(product)(_id)}
+                        for="pacel-modal" className="btn btn-primary">Buy Now</label></Link> */}
+                    <label
+                        onClick={() => setPacel(product)(_id)}
+                        for="pacel-modal" className="btn btn-primary">Buy Now</label>
                 </div>
             </div>
         </div>

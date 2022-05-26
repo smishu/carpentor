@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import PacelOrder from '../Oders/PacelOrder';
 import Product from './Product';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
+    const [pacel, setPacel] = useState(null);
     useEffect(() => {
         fetch(`http://localhost:5000/product`)
             .then(res => res.json())
@@ -16,12 +18,18 @@ const Products = () => {
                     products.map(product => <Product
                         key={product._id}
                         product={product}
+                        setPacel={setPacel}
                     ></Product>)
 
                 }
             </div>
 
-
+            {
+                pacel && <PacelOrder
+                    pacel={pacel}
+                    setPacel={setPacel}
+                ></PacelOrder>
+            }
         </div>
     );
 };
