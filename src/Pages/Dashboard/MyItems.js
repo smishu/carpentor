@@ -15,7 +15,7 @@ const MyItems = () => {
     }, [user])
     return (
         <div>
-            <h2>My items{items.length}</h2>
+
 
             <div class="overflow-x-auto">
                 <table class="table w-full">
@@ -24,32 +24,21 @@ const MyItems = () => {
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Email</th>
+                            <th>Product</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {
+                            items.map(item => <tr>
+                                <th>1</th>
+                                <td>{item.buyerName}</td>
+                                <td>{item.buyer}</td>
+                                <td>{item.pacel}</td>
+                            </tr>)
+                        }
 
-                        <tr>
-                            <th>1</th>
-                            <td>Cy Ganderton</td>
-                            <td>Quality Control Specialist</td>
-                            <td>Blue</td>
-                        </tr>
 
-                        <tr class="hover">
-                            <th>2</th>
-                            <td>Hart Hagerty</td>
-                            <td>Desktop Support Technician</td>
-                            <td>Purple</td>
-                        </tr>
-
-                        <tr>
-                            <th>3</th>
-                            <td>Brice Swyre</td>
-                            <td>Tax Accountant</td>
-                            <td>Red</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
