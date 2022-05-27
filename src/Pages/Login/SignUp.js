@@ -28,7 +28,7 @@ const SignUp = () => {
     }
 
     if (token) {
-        navigate('/product');
+        navigate('/products');
     }
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
