@@ -18,6 +18,7 @@ import MyItems from './Pages/Dashboard/MyItems';
 import Review from './Pages/Dashboard/Review';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AdminPanle from './Pages/Dashboard/AdminPanle';
+import RequireAdmin from './Pages/Shared/RequireAdmin';
 
 
 
@@ -47,7 +48,10 @@ function App() {
           <Route index element={<MyItems></MyItems>}></Route>
           <Route path='review' element={<Review></Review>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
-          <Route path='admin' element={<AdminPanle></AdminPanle>}></Route>
+          <Route path='admin' element={
+            <RequireAdmin>
+              <AdminPanle></AdminPanle>
+            </RequireAdmin>}></Route>
         </Route>
 
         <Route path='/paceloder' element={<PacelOrder></PacelOrder>}></Route>

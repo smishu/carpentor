@@ -1,8 +1,13 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, Outlet } from 'react-router-dom';
+import auth from '../../firebes.init';
+import useAdmin from '../../hooks/useAdmin';
 import Navbar from '../Home/Navbar';
 
 const Dashboard = () => {
+    const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
     return (
         <div>
             <Navbar></Navbar>
@@ -20,8 +25,8 @@ const Dashboard = () => {
                         <li><Link to='/dashboard/profile'>My Profile</Link></li>
                         <li><Link to='/dashboard'>My Oders</Link></li>
                         <li><Link to='/dashboard/review'>Rewiew</Link></li>
-                        <li><Link to='/dashboard/admin'>Admin Panel</Link></li>
-
+                        {admin && <li><Link to='/dashboard/admin'>Admin Panel</Link></li>
+                        }
                     </ul>
 
                 </div>

@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import AllUsers from './AllUsers';
 
 const AdminPanle = () => {
-    const { data: users, isLoading } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accesstoken')}`
@@ -31,6 +31,7 @@ const AdminPanle = () => {
                         {users.map(user => <AllUsers
                             key={user._id}
                             user={user}
+                            refetch={refetch}
                         ></AllUsers>)}
 
                     </tbody>
