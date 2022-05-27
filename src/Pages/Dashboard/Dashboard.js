@@ -20,6 +20,7 @@ const Dashboard = () => {
                         <li><Link to='/dashboard/profile'>My Profile</Link></li>
                         <li><Link to='/dashboard'>My Oders</Link></li>
                         <li><Link to='/dashboard/review'>Rewiew</Link></li>
+                        <li><Link to='/dashboard/admin'>Admin Panel</Link></li>
 
                     </ul>
 
