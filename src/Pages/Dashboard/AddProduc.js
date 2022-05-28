@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 
 const AddProduc = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const { data: products, isLoading } = useQuery('products', () => fetch(`http://localhost:5000/product`)
+    const { data: products, isLoading } = useQuery('products', () => fetch(`https://fierce-sea-06191.herokuapp.com/product`)
         .then(res => res.json()))
     const imageStorageKey = '79a5c020cf113cc46c7563266cde389a';
     const onSubmit = async data => {
@@ -31,7 +31,7 @@ const AddProduc = () => {
 
 
                     }
-                    fetch(`http://localhost:5000/newProduct `, {
+                    fetch(`https://fierce-sea-06191.herokuapp.com/newProduct `, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -15,7 +15,7 @@ const PacelOrder = ({ pacel, setPacel, refetch }) => {
             buyerName: user.displayName,
             Phone: event.target.phone.value
         }
-        fetch('http://localhost:5000/pacelBook', {
+        fetch('https://fierce-sea-06191.herokuapp.com/pacelBook', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

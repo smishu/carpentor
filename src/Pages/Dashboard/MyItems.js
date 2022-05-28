@@ -11,7 +11,7 @@ const MyItems = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/pacelBook?buyer=${user.email}`, {
+            fetch(`https://fierce-sea-06191.herokuapp.com/pacelBook?buyer=${user.email}`, {
 
                 method: 'GET',
                 headers: {

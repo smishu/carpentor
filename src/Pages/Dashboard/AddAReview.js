@@ -16,7 +16,7 @@ const AddAReview = () => {
     const review = event.target.Review.value;
     // console.log(review);
     const { data } = await axios.post(
-      "http://localhost:5000/review",
+      "https://fierce-sea-06191.herokuapp.com/review",
       {
         displayName: displayName,
         email: email,

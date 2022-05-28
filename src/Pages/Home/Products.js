@@ -6,7 +6,7 @@ import Product from './Product';
 
 const Products = () => {
     const [pacel, setPacel] = useState(null);
-    const { data: products, isLoading, refetch } = useQuery('available', () => fetch(`http://localhost:5000/available`)
+    const { data: products, isLoading, refetch } = useQuery('available', () => fetch(`https://fierce-sea-06191.herokuapp.com/available`)
         .then(res => res.json())
     )
     if (isLoading)
