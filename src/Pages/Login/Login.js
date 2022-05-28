@@ -42,7 +42,7 @@ const Login = () => {
         console.log(user);
     }
     const onSubmit = data => {
-        console.log(data);
+        signInWithEmailAndPassword(data.email, data.password)
     }
     return (
         <div className='flex h-screen justify-center items-center'>
@@ -81,7 +81,7 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input
-                                type="password"
+                                type="password" cdc
                                 placeholder="Password"
                                 className="input input-bordered w-full max-w-xs"
                                 {...register("password", {

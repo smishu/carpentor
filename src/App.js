@@ -15,10 +15,11 @@ import PacelOrder from './Pages/Oders/PacelOrder';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MyItems from './Pages/Dashboard/MyItems';
-import Review from './Pages/Dashboard/Review';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AdminPanle from './Pages/Dashboard/AdminPanle';
 import RequireAdmin from './Pages/Shared/RequireAdmin';
+import AddProduc from './Pages/Dashboard/AddProduc';
+import AddAReview from './Pages/Dashboard/AddAReview';
 
 
 
@@ -46,11 +47,15 @@ function App() {
 
         }>
           <Route index element={<MyItems></MyItems>}></Route>
-          <Route path='review' element={<Review></Review>}></Route>
+          <Route path='review' element={<AddAReview></AddAReview>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
           <Route path='admin' element={
             <RequireAdmin>
               <AdminPanle></AdminPanle>
+            </RequireAdmin>}></Route>
+          <Route path='addProduct' element={
+            <RequireAdmin>
+              <AddProduc></AddProduc>
             </RequireAdmin>}></Route>
         </Route>
 
