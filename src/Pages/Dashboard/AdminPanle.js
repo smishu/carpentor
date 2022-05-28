@@ -20,10 +20,11 @@ const AdminPanle = () => {
 
                     <thead>
                         <tr>
+
+                            <th>Admin</th>
                             <th></th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,6 +33,7 @@ const AdminPanle = () => {
                             key={user._id}
                             user={user}
                             refetch={refetch}
+
                         ></AllUsers>)}
 
                     </tbody>

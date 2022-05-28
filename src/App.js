@@ -15,11 +15,12 @@ import PacelOrder from './Pages/Oders/PacelOrder';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MyItems from './Pages/Dashboard/MyItems';
-import MyProfile from './Pages/Dashboard/MyProfile';
 import AdminPanle from './Pages/Dashboard/AdminPanle';
 import RequireAdmin from './Pages/Shared/RequireAdmin';
 import AddProduc from './Pages/Dashboard/AddProduc';
 import AddAReview from './Pages/Dashboard/AddAReview';
+import Reviews from './Pages/Home/Reviews';
+import Navbar from './Pages/Shared/Navbar';
 
 
 
@@ -29,7 +30,7 @@ function App() {
     <div>
 
 
-
+      <Navbar></Navbar>
 
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -48,7 +49,7 @@ function App() {
         }>
           <Route index element={<MyItems></MyItems>}></Route>
           <Route path='review' element={<AddAReview></AddAReview>}></Route>
-          <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+
           <Route path='admin' element={
             <RequireAdmin>
               <AdminPanle></AdminPanle>
@@ -61,6 +62,7 @@ function App() {
 
         <Route path='/paceloder' element={<PacelOrder></PacelOrder>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
 
